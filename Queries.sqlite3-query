@@ -1,0 +1,16 @@
+-- database: ./Easy Flask/database.db
+
+INSERT INTO Phones (Model, Price, Ram_GB, Storage_GB, Description, ImageURL)
+VALUES 
+('Samsung Galaxy S26 Ultra', 2145, 12, 256, 'Samsung flagship with 200MP quad-camera and enhanced AI features.', 'https://images.example.com/s26-ultra.jpg'),
+('iPhone 17 Pro Max', 1979, 12, 256, 'Apple premium titanium device with advanced Center Stage cameras.', 'https://images.example.com/iphone17-pm.jpg'),
+('Google Pixel 10 Pro XL', 1815, 16, 256, 'AI-first phone with native Gemini Ultra and top-tier photography.', 'https://images.example.com/pixel10-pro.jpg'),
+('Xiaomi 16 Ultra', 1899, 16, 512, 'Photography powerhouse with Leica optics and 120W fast charging.', 'https://images.example.com/xiaomi16-u.jpg'),
+('Samsung Galaxy Z Fold 7', 3135, 12, 512, 'Premier foldable with a slimmer hinge and tablet-style inner display.', 'https://images.example.com/zfold7.jpg'),
+('OnePlus 14', 1319, 12, 256, 'High-speed performance with Hasselblad camera tuning.', 'https://images.example.com/oneplus14.jpg'),
+('Nothing Phone (3)', 1185, 12, 256, 'Semi-transparent design with upgraded Glyph Interface.', 'https://images.example.com/nothing3.jpg'),
+('Samsung Galaxy S25 FE', 1070, 8, 128, 'Fan Edition offering flagship AI features at a mid-range price.', 'https://images.example.com/s25-fe.jpg'),
+('Google Pixel 9a', 825, 8, 128, 'Best value for computational photography and long-term updates.', 'https://images.example.com/pixel9a.jpg'),
+('Nothing Phone (3a) Pro', 745, 8, 256, 'A designer mid-ranger focusing on smooth software and aesthetics.', 'https://images.example.com/nothing3a.jpg'),
+('Samsung Galaxy A36 5G', 495, 6, 128, 'Durable budget king with a 5,000mAh battery and 5G.', 'https://images.example.com/a36.jpg'),
+('Lava Yuva Star 3', 149, 4, 64, 'Entry-level Android 15 Go device for basic essential tasks.', 'https://images.example.com/lava-yuva.jpg');
