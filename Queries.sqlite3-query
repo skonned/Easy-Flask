@@ -1,4 +1,4 @@
--- database: ./Easy Flask/database.db
+-- database: c:\Users\darre\OneDrive\Desktop\Easy Flask\database.db
 
 INSERT INTO Phones (Model, Price, Ram_GB, Storage_GB, Description, ImageURL)
 VALUES 
@@ -14,3 +14,8 @@ VALUES
 ('Nothing Phone (3a) Pro', 745, 8, 256, 'A designer mid-ranger focusing on smooth software and aesthetics.', 'https://images.example.com/nothing3a.jpg'),
 ('Samsung Galaxy A36 5G', 495, 6, 128, 'Durable budget king with a 5,000mAh battery and 5G.', 'https://images.example.com/a36.jpg'),
 ('Lava Yuva Star 3', 149, 4, 64, 'Entry-level Android 15 Go device for basic essential tasks.', 'https://images.example.com/lava-yuva.jpg');
+
+-- just id, maker, model and image URL
+SELECT Phones.PhoneID,Makers.Name,Phones.Model,Phones.ImageURL 
+FROM Phones
+Join Makers ON Makers.MakerID=Phones.MakerID;
