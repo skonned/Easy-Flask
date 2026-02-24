@@ -1,5 +1,5 @@
 # flask quickstart for information on flask
-from flask import Flask, g
+from flask import Flask, g, render_template
 import sqlite3
 
 DATABASE = 'database.db'
@@ -37,7 +37,7 @@ def home():
                 FROM Phones
                 Join Makers ON Makers.MakerID=Phones.MakerID;"""
     results = query_db(sql)
-    return str(results)
+    return render_template("home.html", results=results)
 
 
 @app.route("/phone/<int:id>")
@@ -48,7 +48,7 @@ def phone(id):
                 JOIN Makers ON Makers.MakerID=Phones.MakerID
                 Where PhoneID = ?;"""
     result = query_db(sql, (id,), True)
-    return str(result)
+    return render_template("phone.html", phone=result)
 
 
 if __name__ == "__main__":

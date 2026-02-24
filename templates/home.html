@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Home Page -->
+ <!-- 3 Column Grid -->
+  <div class="three-column">
+    {% for phone in results %}
+    <a href="{{ url_for('phone',id=phone[0]) }}">
+    <div class="w3-card-4">
+        <!-- The name and the image -->
+         <h1>{{ phone[1] }} {{ phone[2] }}</h1>
+         <img src="{{ phone[3] }}" alt="{{ phone[2] }}">
+    </div>
+    </a>
+    {% endfor %}
+  </div>
+{% endblock %}

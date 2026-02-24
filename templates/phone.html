@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Singular phone page -->
+<!-- Two Column Grid -->
+<div class="two-column">
+    <!-- Image on left -->
+    <img src="{{ phone[7] }}" alt="{{ phone[2] }}">
+    <!-- Info on right -->
+    <div class="info">
+        <h1>Model: {{ phone[2] }}</h1>
+        <h1>Price: ${{ phone[4] }}</h1>
+        <h1>Description:</h1>
+        <h1>{{ phone[6] }}</h1>
+        <h1></h1>
+    </div>
+</div>
+{% endblock %}

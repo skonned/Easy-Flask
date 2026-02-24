@@ -19,3 +19,7 @@ VALUES
 SELECT Phones.PhoneID,Makers.Name,Phones.Model,Phones.ImageURL 
 FROM Phones
 Join Makers ON Makers.MakerID=Phones.MakerID;
+
+SELECT * FROM Phones 
+JOIN Makers ON Makers.MakerID=Phones.MakerID
+Where PhoneID = 2;

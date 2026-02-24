@@ -1,0 +1,21 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: SN+Pro, sans-serif;
+}
+
+.three-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+/* All images at 100 */
+img{
+    width: 100%;
+}
+
+/* Two Column layout for phone.html */
+.two-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
